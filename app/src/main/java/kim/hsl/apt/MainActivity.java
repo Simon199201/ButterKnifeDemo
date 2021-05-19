@@ -1,12 +1,11 @@
 package kim.hsl.apt;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.TextView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
+import androidx.appcompat.app.AppCompatActivity;
+
+import kim.hsl.annotation.BindView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ButterKnife.bind(this);
-
-        hello.setText("ButterKnife");
+        //hello.setText("ButterKnife");
     }
 }
