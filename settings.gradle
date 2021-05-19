@@ -1,0 +1,4 @@
+include ':annotation-compiler'
+include ':annotation'
+include ':app'
+rootProject.name = "APT"
