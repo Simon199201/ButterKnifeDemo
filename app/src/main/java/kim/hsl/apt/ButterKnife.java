@@ -13,6 +13,7 @@ public class ButterKnife {
             // 通过反射得到 MainActivity_ViewBinder 类对象
             Class<?> clazz = Class.forName(className);
 
+            // 调用生成的代码 MainActivity_ViewBinder 的 bind 方法
             if (IButterKnife.class.isAssignableFrom(clazz)){
                 IButterKnife iButterKnife = (IButterKnife) clazz.newInstance();
                 iButterKnife.bind(target);
